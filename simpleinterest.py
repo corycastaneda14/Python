@@ -7,12 +7,12 @@ time - The investment duration in years.
 Use the return keyword to send back the computed interest to a variable in the main function.
 Print the result using formatted strings in the main function.'''
 
-def main():
-    principal = float(input("What is the principal amount? "))
-    rate = float(input("What is the annual interest rate? "))
-    time= float(input("What is the duration of the investment? "))
-    interest= calculate_interest(principal,rate,time)
-    print(f"The simple interest for ${principal:,.2f} at {rate}% over {time} years is ${interest:,.2f}.")
-def calculate_interest(principal,rate,time):
-    return (principal*rate*time)/100
-main()
+def main():#The purpose of the program.
+    principal = float(input("What is the principal amount? "))#Gets principal amount
+    rate = float(input("What is the annual interest rate? "))#Gets interest rate
+    time= float(input("What is the duration of the investment? "))#Gets time
+    interest= calculate_interest(principal,rate,time)#Stores result
+    print(f"The simple interest for ${principal:,.2f} at {rate}% over {time} years is ${interest:,.2f}.")#Prints results
+def calculate_interest(principal,rate,time):#
+    return (principal*rate*time)/100#Calculates simple interest formula
+main()#Runs program
