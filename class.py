@@ -3,37 +3,46 @@ Accessor and Mutator Methods: Write get and set methods for each piece of data. 
 Creating Instances: Write a program that creates three instances (objects) of the Person class. Use one instance for your made-up information and the other two for imaginary friends or family members.
 Display Data: Print out the information stored in each instance. Ensure the output is formatted and easy to read.
 '''
-class Person:
+class Person:#Defines person class
     def __init__(self,name, address,age, phone):
+        self._name=name#Variable
+        self._address=address#Variable
+        self._age=age#Variable
+        self._phone=phone#Variable
+    def get_name(self):#Accessing variable
+        return self._name#Returns variable
+    def get_address(self):#Accessing variable
+        return self._address #Returns variable
+    def get_age(self):#Accessing variable
+        return self._age #Returns variable
+    def get_phone(self):#Accessing variable
+        return self._phone #Returns variable
+    def set_name(self,name):#Sets variable
         self._name=name
+    def set_address(self,address):#Sets variable
         self._address=address
+    def set_age(self,age):#Sets variable
         self._age=age
+    def set_phone(self,phone):#Sets variable
         self._phone=phone
-    def get_name(self):
-        return self.name
-    def get_address(self):
-        return self._address 
-    def get_age(self):
-        return self._age 
-    def get_phone(self):
-        return self._phone 
-    def set_name(self,name):
-        self._name=name
-    def set_address(self,address):
-        self._address=address
-    def set_age(self,age):
-        self._age=age
-    def set_phone(self,phone):
-        self._phone=phone
-    def get_info(self):
-        return f"Name:{self._name} Address:{self._address} Age:{self._age} Phone Number:{self._phone}"
-def main():
-        person1=Person("Cory Castaneda","822 Hickory Ct","18","8159096413")
-        person2=Person("Alex Smith","123 Main St","20","8157772425")
-        person3=Person("Joe Johnson", "545 Diaz Rd","24","8152374567")
-        print(person1.get_info())
-        print(person2.get_info())
-        print(person3.get_info())
+    
+def main():#Main function
+        person1=Person("Cory Castaneda","747 South Ct","18","8157731234")#Information for person 1
+        print(person1.get_name())#Prints name
+        print(person1.get_address())#Prints address
+        print(person1.get_age())#Prints age
+        print(person1.get_phone())#Prints phone number
+        person2=Person("Alex Smith","123 Main St","20","8157772425")#Information for person 2
+        print(person2.get_name())#Prints name
+        print(person2.get_address())#Prints address
+        print(person2.get_age())#Prints age
+        print(person2.get_phone())#Prints phone number
+        person3=Person("Joe Johnson", "545 Diaz Rd","24","8152374567")#Information for person 3
+        print(person3.get_name())#Prints name
+        print(person3.get_address())#Prints address
+        print(person3.get_age())#Prints age
+        print(person3.get_phone())#prints phone number
+        
 
-main()
+main()#Runs program
     
