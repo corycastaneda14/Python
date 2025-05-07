@@ -1,0 +1,6 @@
+Date/Time: May 7,2025
+Entry: Hello everybody. I'm learning about making a diary in Python.
+Date/Time: May 8,2025
+Entry: Hello everybody. I'm running this code for a second time.
+Date/Time: May 9,2025
+Entry: Hello everybody. I'm running  this code for a third time.
