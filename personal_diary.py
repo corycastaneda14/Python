@@ -12,7 +12,7 @@ def main():
     date_time = input("Enter the current date and time: ")#Prompts user for date and time
     entry = input("Write your diary entry: ")#Prompts user for diary entry
     diary_file = open("diary.txt", "a")#Appends to diary.txt
-    diary_file.write("Date/Time: " + date_time + "\n")#Writes date and time
-    diary_file.write("Entry: " + entry + "\n")#Writes diary entry
+    diary_file.write("Date and Time: " + date_time + "\n")#Writes date and time with a new line
+    diary_file.write("Entry: " + entry + "\n")#Writes diary entry with a new line
     diary_file.close()#Closes file
 main()#Runs program
